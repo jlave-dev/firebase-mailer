@@ -35,4 +35,4 @@ TO=<<send-to address>>
 ```
 firebase deploy --only functions
 ```
-If the stars align and you're exceptionally lucky, you should see some status messages followed by `Deploy complete!`.
+If the stars align and you're exceptionally lucky, you should see some status messages followed by `Deploy complete!`. :rainbow:
