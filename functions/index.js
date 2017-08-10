@@ -17,7 +17,7 @@ exports.sendMail = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
     if (req.body.name && req.body.email && req.body.message) {
       const mailOptions = {
-        from: `"Contact Page" <${process.env.USER}>`,
+        from: `"Contact Page" <${process.env.FROM || process.env.USER}>`,
         to: process.env.TO,
         subject: `Message from ${req.body.name}`,
         html: `<p>${req.body.message}</p><p>Reply to <a href="mailto:${req.body.email}">${req.body.email}</a></p>`
