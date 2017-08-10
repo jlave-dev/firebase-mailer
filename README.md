@@ -23,7 +23,7 @@ PASS=<<from password>>
 FROM=<<from address - can omit if same as USER above>>
 TO=<<send-to address>>
 ```
-2. Also create `.firebaserc` and add
+2. Also create `.firebaserc` containing
 ```
 {
   "projects": {
