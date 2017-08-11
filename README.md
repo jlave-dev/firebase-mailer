@@ -15,7 +15,7 @@ npm i
 :warning: Note that `node_modules` are installed in the `functions` sub-directory rather than the main project directory.
 
 ## Run
-1. Inside the `firebase-contact` directory, create a `.env` file with the [parameters](https://github.com/motdotla/dotenv)
+1. Inside the `functions` directory, create a `.env` file with the [parameters](https://github.com/motdotla/dotenv)
 ```
 HOST=<<your smtp server>>
 USER=<<from username>>
