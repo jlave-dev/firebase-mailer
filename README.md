@@ -15,7 +15,7 @@ npm i
 :warning: Note that `node_modules` are installed in the `functions` sub-directory rather than the main project directory.
 
 ## Run
-Inside the `firebase-contact` directory, create a `.env` file with the [parameters](https://github.com/motdotla/dotenv)
+1. Inside the `functions` directory, create a `.env` file with the [parameters](https://github.com/motdotla/dotenv)
 ```
 HOST=<<your smtp server>>
 USER=<<from username>>
@@ -23,8 +23,16 @@ PASS=<<from password>>
 FROM=<<from address - can omit if same as USER above>>
 TO=<<send-to address>>
 ```
-Then run
+2. Also create `.firebaserc` containing
+```
+{
+  "projects": {
+    "default": "<<your project ID>>"
+  }
+}
+```
+3. Run
 ```
 firebase deploy --only functions
 ```
-If the stars align and you're exceptionally lucky, you should see some status messages followed by `Deploy complete!`.
+If the stars align and you're exceptionally lucky, you should see some status messages followed by `Deploy complete!`. :rainbow:
