@@ -1,13 +1,13 @@
-# firebase-contact
- :mailbox: Firebase function which sends mail upon POST request
+# firebase-mailer
+> :mailbox: Firebase function which sends email upon POST request
 ## Pre-requisites
 You should, of course, already have a Firebase account and project set up. If you haven't installed the Firebase CLI tools, open a terminal and run
-```
+```bash
 npm install -g firebase-tools
 firebase login
 ```
 and follow authentication prompts. Then set up this repository with
-```
+```bash
 git clone https://github.com/jameslave/firebase-contact
 cd firebase-contact/functions
 npm i
@@ -32,7 +32,7 @@ TO=<<send-to address>>
 }
 ```
 3. Run
-```
+```bash
 firebase deploy --only functions
 ```
 If the stars align and you're exceptionally lucky, you should see some status messages followed by `Deploy complete!`. :rainbow:
